@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>West Bengal's Digital Infrastructure Push — Elementa Advisory</title>
+<meta name="description" content="Eastern India's first cable landing station, a new state incentive framework and a wave of announced data centre capital. What a developer should verify before committing to West Bengal.">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADXklEQVR4nO2aUXKjOBCGWwIksKAoxy85UM6Tw+SaqZAE25IspNY+DKTYGXvsrRrU4w1flR/Awv71S3S3BAwAInxjOLUAalYDqAVQsxpALYCa1QBqAdSsBlALoGY1gFoANasB1AKoyW9qlN/U7K/De3+1DYNvvhy+OLSMMYgxQlVV8Pz8DFVVQYwRGGMp9f1nJo3GGHh5eQFjzFdfznFxBkwXPTw8wNvb25KaF2O320HXdb814OrNHWOE19dX2G63dzUD3t/fL3Z6zs1BMM/zuzLg1sD97dMgiQG3TM1UkBgw3UYxRkDEODcktTnJKxxEjMYY773H0QgGADHGCEKITAiRZVmWLNAkNcBaG4wxg5QyU0qJPM8ZwI9RDyGg1tqfTiffNI1MZUIyA6y13lrr27aVnPN/dW6M2pxzzqSUxX6/P9V1LSeDliRJDPDeozFmaNu25Jyzc/e5cy4gIkops81mIw6HwymFtiQGHA6HQSklpuA3ryUmM4wxviiKbIwFPMsybozx8zZLsLgBIYQIAFEIkZ37fipTnXNBSplP5iilCudcWFrf4jFgGAbknHMA+KWSnI6ttT6ODMMQAX5kixACLl19prgF4rUOaK2dlDKLPwEw5scFSZEFGCJeXHGOdUF4fHysfo761lo/Tp7FWHwGFEXBEREBzgc/rbUf0+BXdogxwjAMOB6fzRp/ikUNiDHCWNAwa+3Z/am+709VVeXzaxhjoLUepJSLz9BFDZhGvK5rsd/v3XyEGWMQQojGmEEpVczPW2u99x43m00+/50lSFIHFEXB67oWXddp7/1XUDwej26s/nIAAM45aK193/eubdsyhbZkpXBVVTljDD4+PowQIivLsui6zpZlWSBidM4FY8yAiLDb7ar/3VoAAKAsy1xKmWut3fF4dEKIrCgK/vn5eWKMQVVVRVmWSTUlXw4zxkApJZRSsN1uU//9L5DtCE2f+TkKSB75nIvqVJut66YotQBqVgOoBVBzUxBEREDEu3oyNK6/rnLVAMYYNE0DSy9L/zRN09w0WBcNmPJy3/fw9PR0dy9JeO+h73sA+H2Nsb4gcUujLDu7n/nXE8L1PdVvPwPuK7ItwGoAtQBqVgOoBVCzGkAtgJrVAGoB1KwGUAugZjWAWgA1/wDhML072wkVewAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@300;400;500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101613;--ink-2:#151d18;--ink-3:#1b241e;
+  --paper:#f2f1ea;--mint:#c9eed9;--mint-dim:#9ec9b2;--green-deep:#1f6b4a;
+  --text:#edece6;--text-2:#a8b1ab;
+  --line:rgba(237,236,230,.13);--line-strong:rgba(237,236,230,.25);
+  --max:1240px;--gutter:clamp(20px,5vw,72px);
+  --serif:"Newsreader",Georgia,serif;--sans:"Archivo",system-ui,sans-serif;--mono:"Spline Sans Mono",ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--ink);color:var(--text);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--mint);color:var(--ink)}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.narrow{max-width:760px;margin:0 auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:-.01em}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint-dim);display:flex;align-items:center;gap:14px}
+.eyebrow::after{content:"";height:1px;width:56px;background:var(--mint-dim);opacity:.45}
+
+header{position:sticky;top:0;z-index:50;background:rgba(16,22,19,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:34px;width:auto}
+.brand span{font-family:var(--serif);font-size:22px;letter-spacing:.02em}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);transition:color .25s}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--mint)}
+@media (max-width:820px){.nav-links a{display:none}.nav-links a.back{display:inline}}
+
+.art-head{padding-block:clamp(56px,9vw,104px) clamp(36px,5vw,56px);border-bottom:1px solid var(--line)}
+.art-head h1{font-size:clamp(32px,5vw,60px);margin:26px 0 26px;max-width:22ch}
+.standfirst{color:var(--text-2);font-size:clamp(16px,1.5vw,19px);max-width:62ch}
+.meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:38px;padding-top:22px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-2)}
+
+article{padding-block:clamp(48px,7vw,80px)}
+article h2{font-size:clamp(24px,3vw,34px);margin:clamp(44px,6vw,68px) 0 20px}
+article h2:first-child{margin-top:0}
+article p{margin-bottom:22px;color:#dcdbd4}
+article p strong{font-weight:500;color:var(--text)}
+article a.ref{color:var(--mint-dim);border-bottom:1px solid rgba(158,201,178,.35);transition:color .25s,border-color .25s}
+article a.ref:hover{color:var(--mint);border-color:var(--mint)}
+article ul{margin:0 0 22px;padding-left:0;list-style:none}
+article ul li{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px;color:#dcdbd4}
+article ul li::before{content:"";flex:0 0 8px;height:1px;background:var(--mint-dim);margin-top:.78em}
+
+.stat-band{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:clamp(36px,5vw,52px) 0}
+.stat{background:var(--ink-2);padding:26px 22px}
+.stat b{display:block;font-family:var(--serif);font-size:clamp(24px,2.6vw,32px);font-weight:400;color:var(--mint);margin-bottom:8px}
+.stat span{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);line-height:1.6;display:block}
+@media (max-width:760px){.stat-band{grid-template-columns:1fr 1fr}}
+
+.callout{border-left:2px solid var(--mint-dim);background:var(--ink-2);padding:24px 26px;margin:clamp(32px,4vw,44px) 0;border-radius:0}
+.callout p{margin:0;font-size:15px;color:var(--text-2)}
+.callout .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint-dim);display:block;margin-bottom:10px}
+
+.art-image{margin:clamp(32px,4vw,44px) 0}
+.art-image img{width:100%;border:1px solid var(--line);display:block}
+.art-image figcaption{margin-top:14px;font-size:13px;color:var(--text-2);line-height:1.6}
+.art-image figcaption .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint-dim);display:block;margin-bottom:8px}
+
+.float-portrait{float:left;width:132px;margin:4px 20px 12px 0}
+.float-portrait img{width:100%;border:1px solid var(--line);display:block}
+.float-portrait figcaption{margin-top:8px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2);line-height:1.5}
+.clearfix{clear:both}
+@media (max-width:560px){.float-portrait{float:none;width:110px;margin:0 0 14px}}
+
+.srcs{border-top:1px solid var(--line);margin-top:clamp(52px,7vw,80px);padding-top:34px}
+.srcs h3{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint-dim);font-weight:400;margin-bottom:20px}
+.srcs ol{padding-left:20px;font-size:13.5px;color:var(--text-2);line-height:1.7}
+.srcs li{margin-bottom:10px}
+.srcs a{color:var(--mint-dim);word-break:break-word}
+.srcs a:hover{color:var(--mint)}
+.disclaimer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--text-2);max-width:74ch}
+
+.cta-band{border-top:1px solid var(--line);background:var(--ink);padding-block:clamp(64px,8vw,96px);text-align:center}
+.cta-band h2{font-size:clamp(26px,4vw,44px);max-width:20ch;margin:22px auto 34px}
+.cta-band .eyebrow{justify-content:center}
+.cta-band .eyebrow::before{content:"";height:1px;width:56px;background:var(--mint-dim);opacity:.45}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:16px 30px;border-radius:2px;background:var(--mint);color:var(--ink);transition:background .25s}
+.btn:hover,.btn:focus-visible{background:#dff7e9}
+
+footer{background:var(--ink);border-top:1px solid var(--line);padding-block:48px 36px}
+.foot-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--text-2)}
+.foot-base a:hover{color:var(--mint)}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Elementa Advisory — home">
+      <img src="https://res.cloudinary.com/dvw40hnfw/image/upload/v1781611814/White_symbol_Elementa_nelcgn.png" alt="" width="44" height="44">
+      <span>Elementa</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#capabilities">What we do</a>
+      <a href="index.html#mandates">Live mandates</a>
+      <a href="insights.html">Insights</a>
+      <a class="back" href="insights.html">← Back to insights</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap art-head">
+    <div class="narrow">
+      <p class="eyebrow">Insight · Digital infrastructure</p>
+      <h1>West Bengal's digital infrastructure push</h1>
+      <p class="standfirst">Eastern India's first cable landing station, a ₹5,000 crore incentive framework and a queue of announced data centre capital have made West Bengal a credible late entrant. The announcements are real. The question a developer has to answer is how to navigate this emerging landscape.</p>
+      <div class="meta">
+        <span>July 2026</span>
+        <span>Elementa Advisory</span>
+        <span>7 min read</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <article class="narrow">
+
+      <p>India's data centre buildout has, until recently, been a story about four cities — Mumbai, Chennai, Hyderabad, Bengaluru. Eastern India was structurally excluded, for a reason that had nothing to do with policy: every bit of international traffic leaving the region had to transit a landing station on the west or south coast. Latency and single-route dependency are not incentives problems. They are physics problems.</p>
+
+      <p>That specific constraint is now being addressed, and a cluster of state policy moves has arrived alongside it. For a developer assessing eastern India, the question is no longer whether West Bengal is trying. It plainly is. The question is which parts of the offer are contracted, which are announced, and which are exploratory.</p>
+
+      <div class="stat-band">
+        <div class="stat"><b>₹1,000cr+</b><span>Digha cable landing station — Jio</span></div>
+        <div class="stat"><b>₹5,000cr</b><span>State investment promotion framework</span></div>
+        <div class="stat"><b>₹4,500cr+</b><span>L&amp;T commitment across WB projects</span></div>
+        <div class="stat"><b>11</b><span>Operators under 2021 DC policy</span></div>
+      </div>
+
+      <h2>The connectivity unlock is the substantive change</h2>
+
+      <p>The Digha cable landing station in Purba Medinipur, implemented by Reliance Jio at an investment of over ₹1,000 crore, is the first in eastern India. State approval came in August 2020; in September 2024 the state's then principal chief advisor put the operational date at the first quarter of 2026 (delayed since), with initial capacity cited at around 9 Tbps and direct connectivity toward Singapore, Malaysia and Italy <a class="ref" href="#s1">[1]</a><a class="ref" href="#s2">[2]</a>.</p>
+
+      <p>The strategic point is the removal of the Mumbai/Chennai routing dependency. For latency-sensitive workloads — and for any operator whose customers care about route diversity as a resilience matter, not just a speed one — that is the difference between eastern India being a viable primary site and being a disaster-recovery afterthought.</p>
+
+      <h2>Announced capital is arriving </h2>
+
+      <p>Larsen &amp; Toubro is reported to be planning over ₹4,500 crore across West Bengal, spanning its software park at Bengal Silicon Valley in New Town — around ₹2,500 crore and some 25,000 jobs at full build — and a new Tier-III data centre in Kolkata, with L&amp;T chairman S N Subrahmanyan expected to meet Chief Minister Suvendu Adhikari on the proposals <a class="ref" href="#s3">[3]</a><a class="ref" href="#s4">[4]</a>.</p>
+
+      <p>Separately, CtrlS Datacenters earmarked around ₹2,200 crore for a campus at Bengal Silicon Valley on a five-acre plot, with a first building at 16 MW IT load and campus potential the company put at 60–100 MW <a class="ref" href="#s6">[6]</a>. That figure dates from 2024 and should be re-confirmed against current build status.</p>
+
+      <p>Adjacent industry investment is building in parallel: Mitsubishi Chemical Group has opened exploratory talks with the state on a semiconductor unit, with Durgapur and Panagarh cited as candidate sites, disclosed by the state industry minister after a Kolkata meeting <a class="ref" href="#s11">[11]</a>. It is early-stage interest under active interstate competition — the same delegation met Assam's Chief Minister the same week — not a committed plant, but it is a directional signal alongside the data centre pipeline.</p>
+
+      <p>The state's own track record here is the more useful datum: the 2021 data centre policy is credited with drawing 11 operators, and the 2020 broadband policy with roughly ₹7,500 crore of telecom investment <a class="ref" href="#s2">[2]</a>. That is a real base, not a standing start.</p>
+
+      <h2>Policy framework aligned with ambitions </h2>
+
+      <p>The 2026 state budget — the first delivered by the current BJP administration — announced a ₹5,000 crore investment promotion framework, a Global Capability Centre policy, a West Bengal Impact AI Mission, and a specific incentive package for AI-oriented data centres and hyperscale cloud infrastructure <a class="ref" href="#s7">[7]</a><a class="ref" href="#s8">[8]</a>.</p>
+
+      <figure class="art-image">
+        <img src="cm-suvendu-adhikari-swapan-dasgupta.jpg" alt="West Bengal Budget 2026–27" loading="lazy">
+        <figcaption><span class="tag">22 June 2026</span>Chief Minister Suvendu Adhikari, Finance Minister Dr Swapan Dasgupta and Minister of State for North Bengal Development Anandamoy Barman with the West Bengal Budget 2026–27 papers on the day of presentation, in which the West Bengal Impact AI Mission was announced.</figcaption>
+      </figure>
+
+      <p>The AI Mission's published numbers are specific but modest relative to the ambition: a ₹40 crore incubation fund, a ₹60 crore venture capital fund, and a ₹50 crore science and technology talent fund, alongside a ₹26 crore IT park in Siliguri <a class="ref" href="#s13">[13]</a>. It sits alongside a parallel semiconductor push — a proposed unit in Durgapur, with stamp duty reimbursement, electricity duty waivers and flexible floor area ratio rules floated specifically for data centre developers <a class="ref" href="#s13">[13]</a>. Dasgupta has since repeated the framing outside the budget speech, telling an MCCI session in July that AI, quantum computing and data centres carry a multiplier effect the state "needs to aggressively get," and flagging power and water availability — with solar cited as a possible offset — as the binding constraint on that ambition <a class="ref" href="#s15">[15]</a>.</p>
+
+      <p>Two subsequent signals matter more than the headline number. A comprehensive new industrial policy is slated for release by 15 August 2026, with a land-acquisition model under evaluation that would give landowners equity stakes in industrial projects <a class="ref" href="#s9">[9]</a>. And the incentive basis is being shifted from capital deployed to jobs created <a class="ref" href="#s10">[10]</a>. The AI Mission itself is one of a batch — alongside an investment promotion framework, an incentive policy and a startup policy — that Dasgupta told the Assembly would follow "before Durga Puja," meaning what exists today is a budget-speech commitment, not yet the operative policy text <a class="ref" href="#s14">[14]</a>.</p>
+
+      <figure class="float-portrait">
+        <img src="IMG_Amit_Malviya.jpg" alt="Amit Malviya, in-charge of the BJP's National IT &amp; Technology Department">
+        <figcaption>Amit Malviya</figcaption>
+      </figure>
+
+      <p>The political reception has been favourable. Amit Malviya, in-charge of the BJP's National IT &amp; Technology Department and the party's West Bengal co-in-charge, publicly welcomed the budget as "a decisive break from the Trinamool model of governance," singling out the Global Capability Centre policy, the Impact AI Mission and the hyperscale data centre incentives as evidence the state is now positioning itself for next-generation industry <a class="ref" href="#s16">[16]</a>. That is a political endorsement of direction, not confirmation of any operational detail beyond what the budget text already sets out.</p>
+
+      <div class="clearfix"></div>
+
+      <h2>The risk that any credible assessment has to name</h2>
+
+      <p>In 2025 the state administration introduced legislation revoking industrial incentives dating back to 1993, with companies reportedly owed in excess of ₹20,000 crore in accrued dues. The current administration has indicated a review, but the fiscal burden of clearing those liabilities remains unresolved <a class="ref" href="#s10">[10]</a>.</p>
+
+      <p>For a developer, this is not a historical footnote — it is the central diligence question. An incentive framework's value is a function of the issuing government's demonstrated willingness to honour it across administrations. A state that has retroactively withdrawn incentives once has, by that act, repriced the risk attaching to every incentive it subsequently offers. The new framework may well be honoured in full. The point is that it cannot be assumed, and any financial model treating state incentives as contracted revenue rather than contingent upside is mispriced.</p>
+
+      <h2>What we would want evidenced before committing</h2>
+
+     <p>On connectivity: Digha's operational status and committed capacity. </p>
+      <p>On power: firm grid capacity and connection timelines at the actual parcel. </p>
+      <p>On land: whether Bengal Silicon Valley or a private parcel gives better programme control, and how any land-for-equity model interacts with either.</p>
+
+      <p>West Bengal's push is genuine and the connectivity unlock is structural rather than promotional. That combination is uncommon enough to be worth serious work. It is also early enough that the difference between a bankable position and an announced one is where the entire value sits.</p>
+
+      <div class="srcs">
+        <h3>Sources</h3>
+        <ol>
+          <li id="s1">CableCommunity — Reliance Jio to set up West Bengal's first cable landing station. <a href="https://cablecommunity.com/reliance-jio-to-setup-west-bengals-first-cable-landing-station/">cablecommunity.com</a></li>
+          <li id="s2">Communications Today — Submarine cable landing station in Digha by 2026. <a href="https://www.communicationstoday.co.in/submarine-cable-landing-station-in-digha-by-2026/">communicationstoday.co.in</a></li>
+          <li id="s3">CXO DigitalPulse — L&amp;T plans over ₹4,500 crore investment in West Bengal across IT and data centre projects. <a href="https://www.cxodigitalpulse.com/larsen-toubro-plans-over-rs-4500-crore-investment-in-west-bengal-across-it-and-data-centre-projects/">cxodigitalpulse.com</a></li>
+          <li id="s4">SSMB — L&amp;T plans ₹4,500 crore investment and data centre in Bengal. <a href="https://ssmb.in/2026/07/07/lt-plans-rs-4500-crore-investment-and-data-centre-in-bengal/">ssmb.in</a></li>
+          <li id="s5">Whalesbook — L&amp;T plans ₹2,500 crore data center investment in West Bengal. <a href="https://www.whalesbook.com/news/English/technology/LandT-Plans-indian-rupee2500-Crore-Data-Center-Investment-in-West-Bengal/6a3f5c17fb97bcde4ce4d87d">whalesbook.com</a></li>
+          <li id="s6">Business Standard — CtrlS to invest ₹2,200 crore at upcoming data centre campus in Kolkata (June 2024). <a href="https://www.business-standard.com/companies/news/ctrls-to-invest-rs-2-200-crore-in-kolkata-data-centre-campus-in-phases-124062700823_1.html">business-standard.com</a></li>
+          <li id="s7">Business Standard — First BJP budget for Bengal focuses on growth, jobs and fiscal discipline. <a href="https://www.business-standard.com/budget/news/first-bjp-budget-for-bengal-focuses-on-growth-jobs-and-fiscal-discipline-126062201245_1.html">business-standard.com</a></li>
+          <li id="s8">Kolkata Calling — Bengal Budget 2026: GCC policy, AI incentives &amp; ₹5,000 crore investment push. <a href="https://www.kolkatacalling.com/news-details/corporate-expansion-business-news/bengal-budget-2026-5000-crore-incentives-gcc-policy-and-ai-push-signal-new-growth-strategy">kolkatacalling.com</a></li>
+          <li id="s9">Whalesbook — West Bengal to unveil new industrial policy by August 15. <a href="https://www.whalesbook.com/news/English/economy/West-Bengal-To-Unveil-New-Industrial-Policy-By-August-15/6a5c1f2efe1c9287f4753d53">whalesbook.com</a></li>
+          <li id="s10">Whalesbook — West Bengal links industrial incentives to job creation. <a href="https://www.whalesbook.com/news/English/economy/West-Bengal-Links-Industrial-Incentives-to-Job-Creation/6a5ad3c7fe1c9287f4746c47">whalesbook.com</a></li>
+          <li id="s11">Electronics For You — Mitsubishi Chemical explores semiconductor investment in West Bengal. <a href="https://www.electronicsforyou.biz/industry-buzz/mitsubishi-chemical-explores-semiconductor-investment-in-west-bengal/">electronicsforyou.biz</a></li>
+          <li id="s13">Whalesbook — West Bengal Budget Unveils AI, Semiconductor Focus. <a href="https://www.whalesbook.com/news/English/technology/West-Bengal-Budget-Unveils-AI-Semiconductor-Focus/6a39df11a1c5bf0843292c1b">whalesbook.com</a></li>
+          <li id="s14">The Daily Pioneer — West Bengal govt to unveil new policies before Durga Puja, says finance minister. <a href="https://dailypioneer.com/news/west-bengal-govt-to-unveil-new-policies-before-durga-puja-says-finance-minister">dailypioneer.com</a></li>
+          <li id="s15">IBG News — West Bengal must aggressively attract high-tech industries to drive economic revival: Finance Minister Dr Swapan Dasgupta. <a href="https://ibgnews.com/2026/07/24/west-bengal-must-aggressively-attract-high-tech-industries-to-drive-economic-revival-finance-minister-dr-swapan-dasgupta/">ibgnews.com</a></li>
+          <li id="s16">X (Amit Malviya) — post on the West Bengal Budget 2026–27, 22 June 2026. <a href="https://x.com/amitmalviya/status/2069078991735324809">x.com/amitmalviya</a></li>
+        </ol>
+        <p class="disclaimer">This article is general commentary based on publicly reported information as at July 2026 and does not constitute an offer, solicitation, investment advice or a recommendation. Figures are as reported by the cited sources and have not been independently verified by Elementa Advisory. Where we have drawn an inference rather than reported a fact, this is marked in the text. Sources conflict on certain project specifications, and those conflicts are noted rather than resolved.</p>
+      </div>
+
+    </article>
+  </div>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2>Working on digital infrastructure in a new market?</h2>
+      <a class="btn" href="mailto:info@elementaadvisory.uk">Write to us</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-base">
+    <span>© 2026 Elementa Advisory. All rights reserved.</span>
+    <a href="index.html">Back to elementaadvisory.co.uk</a>
+  </div>
+</footer>
+
+</body>
+</html>

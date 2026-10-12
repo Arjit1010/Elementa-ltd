@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights &amp; News — Elementa Advisory</title>
+<meta name="description" content="Commentary on energy and digital infrastructure markets, and updates on Elementa Advisory's own mandates and milestones.">
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dvw40hnfw/image/upload/v1781611814/White_symbol_Elementa_nelcgn.png">
+<meta property="og:title" content="Insights & News — Elementa Advisory">
+<meta property="og:description" content="Commentary on energy and digital infrastructure markets, and updates on Elementa Advisory's own mandates and milestones.">
+<meta property="og:image" content="https://res.cloudinary.com/dvw40hnfw/image/upload/v1781609881/OG-1_qhmmty.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@300;400;500&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101613;--ink-2:#151d18;--ink-3:#1b241e;
+  --paper:#f2f1ea;--mint:#c9eed9;--mint-dim:#9ec9b2;--green-deep:#1f6b4a;
+  --text:#edece6;--text-2:#a8b1ab;
+  --line:rgba(237,236,230,.13);--line-strong:rgba(237,236,230,.25);
+  --max:1240px;--gutter:clamp(20px,5vw,72px);
+  --serif:"Newsreader",Georgia,serif;--sans:"Archivo",system-ui,sans-serif;--mono:"Spline Sans Mono",ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--ink);color:var(--text);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--mint);color:var(--ink)}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:-.01em}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint-dim);display:flex;align-items:center;gap:14px}
+.eyebrow::after{content:"";height:1px;width:56px;background:var(--mint-dim);opacity:.45}
+
+header{position:sticky;top:0;z-index:50;background:rgba(16,22,19,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:34px;width:auto}
+.brand span{font-family:var(--serif);font-size:22px;letter-spacing:.02em}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);transition:color .25s}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--mint)}
+.nav-links a[aria-current="page"]{color:var(--mint)}
+.nav-cta{border:1px solid var(--line-strong);padding:10px 22px;border-radius:2px;color:var(--text)!important;transition:border-color .25s,background .25s}
+.nav-cta:hover,.nav-cta:focus-visible{border-color:var(--mint);background:rgba(201,238,217,.07)}
+@media (max-width:820px){.nav-links a:not(.nav-cta){display:none}}
+
+.page-head{padding-block:clamp(56px,9vw,104px) clamp(36px,5vw,56px);border-bottom:1px solid var(--line)}
+.page-head h1{font-size:clamp(32px,5vw,58px);margin:26px 0 22px;max-width:20ch}
+.page-head p{color:var(--text-2);font-size:clamp(15px,1.3vw,18px);max-width:58ch}
+
+section{padding-block:clamp(64px,9vw,110px)}
+
+.insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.5vw,36px)}
+@media (max-width:820px){.insight-grid{grid-template-columns:1fr}}
+
+.insight-card{
+  display:flex;flex-direction:column;gap:18px;
+  border:1px solid var(--line);border-radius:2px;background:var(--ink-2);
+  padding:clamp(26px,3vw,36px);transition:border-color .35s;
+}
+.insight-card:hover{border-color:var(--line-strong)}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.card-tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--mint);border:1px solid rgba(201,238,217,.35);border-radius:999px;padding:6px 14px;white-space:nowrap;
+}
+.card-tag.news{color:var(--mint-dim);border-color:var(--line-strong)}
+.card-date{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-2)}
+.insight-card h2{font-size:clamp(21px,2vw,26px);max-width:22ch}
+.insight-card p{color:var(--text-2);font-size:15px}
+.card-read{
+  margin-top:4px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mint-dim);display:inline-flex;align-items:center;gap:8px;transition:color .25s,gap .25s;
+}
+.insight-card:hover .card-read{color:var(--mint);gap:12px}
+
+.empty-note{
+  margin-top:clamp(36px,4vw,52px);padding-top:24px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--text-2);max-width:70ch;
+}
+
+footer{background:var(--ink);border-top:1px solid var(--line);padding-block:48px 36px}
+.foot-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--text-2)}
+.foot-base a:hover{color:var(--mint)}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Elementa Advisory — home">
+      <img src="https://res.cloudinary.com/dvw40hnfw/image/upload/v1781611814/White_symbol_Elementa_nelcgn.png" alt="" width="44" height="44">
+      <span>Elementa</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#capabilities">What we do</a>
+      <a href="index.html#focus">Our focus</a>
+      <a href="index.html#mandates">Live mandates</a>
+      <a href="insights.html" aria-current="page">Insights</a>
+      <a href="index.html#people">People</a>
+      <a class="nav-cta" href="mailto:info@elementaadvisory.uk">Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap page-head">
+    <p class="eyebrow">Insights &amp; news</p>
+    <h1>What we're watching, and what we're building.</h1>
+    <p>Commentary on the energy and digital infrastructure markets we work in, alongside updates on Elementa's own mandates and milestones.</p>
+  </div>
+
+  <section id="insight-list">
+    <div class="wrap">
+      <div class="insight-grid">
+
+        <article class="insight-card">
+          <div class="card-head">
+            <span class="card-tag">Insight</span>
+            <span class="card-date">July 2026</span>
+          </div>
+          <h2><a href="insights-west-bengal.html">West Bengal's digital infrastructure push</a></h2>
+          <p>Eastern India's first cable landing station, a new state incentive framework and a queue of announced data-centre capital have made West Bengal a credible late entrant.</p>
+          <a class="card-read" href="insights-west-bengal.html">Read the piece →</a>
+        </article>
+
+      </div>
+      <p class="empty-note">New pieces are added here as they're published. For Elementa's live project pipeline, see <a href="index.html#mandates" style="color:var(--mint-dim);border-bottom:1px solid rgba(158,201,178,.4)">Live mandates</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-base">
+    <span>© 2026 Elementa Advisory. All rights reserved.</span>
+    <a href="index.html">Back to elementaadvisory.co.uk</a>
+  </div>
+</footer>
+
+</body>
+</html>
